@@ -223,7 +223,7 @@ public class ImageProcessingWindow extends JFrame {
     }
 
     private void saveImageOnExit(){
-        File downloadsDir = new File(System.getProperty("user.home"), "Downloads");
+        File downloadsDir = new File(System.getProperty("user.home"));
 
         String randomFileName = "image_" + new Random().nextInt(100000) + ".png";
         File outputFile = new File(downloadsDir, randomFileName);
